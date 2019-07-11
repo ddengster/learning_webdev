@@ -35,3 +35,6 @@ JWT authentication:
 - The browser also sends the cookie along for future requests to the same domain
 
 For a next project, vue-auth would be a better choice.
+
+[C1](https://raw.githubusercontent.com/ddengster/learning/master/vuejs_gobackend_login/c1.PNG)
+[C2](https://raw.githubusercontent.com/ddengster/learning/master/vuejs_gobackend_login/c2.PNG)
