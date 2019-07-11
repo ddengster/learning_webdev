@@ -1,5 +1,5 @@
-Login/authentication project using vuejs for frontend and go backend for authentication
-# Register page is unfinished.
+# Login/authentication project using vuejs for frontend and go backend for authentication
+Register page is unfinished.
 
 Install:
 https://cli.vuejs.org/guide/installation.html
