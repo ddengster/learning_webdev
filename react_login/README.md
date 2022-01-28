@@ -64,7 +64,7 @@ See https://reactjs.org/docs/thinking-in-react.html
 
 - To propogate/update state throughout the component heirarchy, use  `React.useContext` along with `useState`, then provide scoped tags `<ContextName.Provider>` in your root `<App/>` tag and it will be passed down to child components. This is the closest thing to globals within the site's pages. https://reactjs.org/docs/context.html. Downsides are that the state disappears on page refreshes, and there's a good amount of boilerplate.
   
-- If all else doesnt suit your needs, use localStorage or server side storage (per user)
+- If all else doesnt suit your needs, use localStorage or server side storage (per user), but beware of staleness of the data.
 
 - You can store data in cookies, but it'll be sent every HTTP request. The recommended types of data to store are auth data(eg. jwt), and language settings.
 https://en.wikipedia.org/wiki/HTTP_cookie
