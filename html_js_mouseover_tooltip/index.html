@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example demonstrates how to assign an "onmouseover" and "onmouseout" event to a h1 element.</p>
+
+<span id="demo" onmouseover="mouseOver(event)" onmouseout="mouseOut()" onmousemove="mouseMove(event)">Mouse over me</span>
+<span id="demo_tooltip" style="display: none;position: absolute;top:0;left:0;width:32px;height:32px;transform: translateX(25%) translateY(20%);">QWEQWEQWE</span>
+
+
+<script>
+function mouseOver(e) {
+  console.log("over ", e.pageX, " ", e.pageY);
+  document.getElementById("demo_tooltip").style.backgroundImage = "url('https://wow.zamimg.com/images/wow/icons/medium/inv_chest_cloth_39.jpg')";
+  document.getElementById("demo_tooltip").style.backgroundRepeat = "no-repeat";
+  document.getElementById("demo_tooltip").style.visibility = true;
+  document.getElementById("demo_tooltip").style.display = "inline";
+  document.getElementById("demo_tooltip").style.color = "silver";
+
+  document.getElementById("demo_tooltip").style.left = e.pageX + 'px';
+  document.getElementById("demo_tooltip").style.top = e.pageY + 'px';
+}
+
+function mouseMove(e) {
+  console.log("move ", e.pageX, " ", e.pageY);
+
+  document.getElementById("demo_tooltip").style.left = e.pageX+ 'px';
+  document.getElementById("demo_tooltip").style.top = e.pageY+ 'px';
+}
+
+function mouseOut() {
+  console.log("out");
+  document.getElementById("demo_tooltip").style.display = "none";
+}
+</script>
+
+</body>
+</html>
